@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8026277731801765"
+     crossorigin="anonymous"></script>
+
+    <!-- Site Title-->
+    <title>Data Binding</title>
+    <meta content="Data Binding Sample."
+			name="description">
+    <meta content="MAUI Data Binding Sample"
+			name="keywords">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,300;0,500;0,600;1,300&amp;display=swap">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="page-loader">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+    </div>
+    <!-- Page-->
+    <div class="page">
+                <!-- Page header-->
+        <header class="page-header">
+          <!-- RD Navbar-->
+          <div class="rd-navbar-wrap">
+              <nav class="rd-navbar novi-bg novi-bg-img" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-sm-device-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" data-lg-stick-up-offset="69px" data-xl-stick-up-offset="1px" data-xxl-stick-up-offset="1px">
+                  <div class="rd-navbar-inner">
+                      <!-- RD Navbar Panel-->
+                      <div class="rd-navbar-panel">
+                          <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                          <!-- RD Navbar Brand-->
+                          <div class="rd-navbar-brand">
+                              <!-- Brand-->
+                              <!--
+                          <a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-347x65.png" alt="" width="173" height="32" /><img class="brand-logo-light" src="images/logo-inverse-347x65.png" alt="" width="173" height="32" /></a>
+                          -->
+                              <div><a href="index.html" style="color:black;margin-top:2.5px;font-size:22px;">MAUIMAN.dev</a></div>
+
+                          </div>
+                      </div>
+
+                      <!-- RD Navbar Nav-->
+                      <div class="rd-navbar-nav-wrap">
+                          <ul class="rd-navbar-nav">
+                              <li><a href="index.html">Home</a></li>
+                              <!--
+                              <li class="active"><a href="index.html#articles">Articles</a></li>
+                              <li class="active"><a href="index.html#samples">Samples</a></li>
+                              -->
+                              <!--
+                              <li class="active"><a href="index.html#templates">Templates</a></li>
+                              <li class="active"><a href="index.html#components">Components</a></li>
+                              -->
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </header>
+
+
+        
+        <!-- Breadcrumbs-->
+        <section class="section novi-bg novi-bg-img breadcrumbs-custom">
+          <div class="container">
+              <div class="breadcrumbs-custom__inner">
+                  <p class="breadcrumbs-custom__title">MANual page for .NET MAUI DEVelopers</p>
+                  <ul class="breadcrumbs-custom__path">
+                      <li><a href="index.html">Home</a></li>
+                      <li class="active">MAUI</li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+
+        <section class="section novi-bg novi-bg-img bg-default section-lg">
+            <div class="container">
+                <div class="row row-fix row-70">
+                    <div class="col-lg-7 col-xl-8 section-divided__main group-post">
+                      <!-- Post standard-->
+<div class="section-md">
+    <article class="post-classic">
+        <div class="post-classic-title">
+            <h4>Data Binding Sample</h4>
+        </div>
+        <div class="post-classic-body">
+            <p>
+                Data binding is a process where a connection between a user interface and the data it displays is established. 
+                After which, when we interact with the user interface, the updates we made are reflected in the data.
+                And when the data changes its value, the user interface will automatically reflect the changes.                 
+            <p>
+                <div>
+                    <img width="50%" height="50%" src=mauishopimages/codebehind.png />
+                </div>
+            </p>
+            <p>
+                In our XAML code below, we are setting up an edit form for a fruit product. The structure of the user interface code is similar to our sample using <a href=codebehind.html>Code Behind</a>.
+                The interesting to note are the elements with the Binding keyword. For example, in our ProductName Entry we define a binding to the ProductName property of our model.
+            </p>
+            <p>
+                <kbd>
+                    Text="{Binding ProductName, Mode=TwoWay}"
+                </kbd>
+            </p>
+            <p>
+                We are using a two-way binding where you can modify the data through the user interface and have that data updated in the model. If the model changes, the view will be automatically updated.
+            </p>   
+            <p>
+                In the XAML code below, we have also defined Data Binding for the ProductPrice Entry, ProductDescription Editor, and ProductOfferEndDate DatePicker.
+            </p> 
+            <p>
+            <div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        &lt;ScrollView>
+            &lt;Grid Margin="25">
+                &lt;Grid.RowDefinitions>
+                    &lt;RowDefinition Height="50">&lt;/RowDefinition>
+                    &lt;RowDefinition Height="200">&lt;/RowDefinition>
+                    &lt;RowDefinition Height="50">&lt;/RowDefinition>
+                    &lt;RowDefinition Height="80">&lt;/RowDefinition>
+                    &lt;RowDefinition Height="100">&lt;/RowDefinition>
+                    &lt;RowDefinition Height="50">&lt;/RowDefinition>
+                    &lt;RowDefinition Height="50">&lt;/RowDefinition>
+                    &lt;RowDefinition Height="*">&lt;/RowDefinition>
+                &lt;/Grid.RowDefinitions>
+                &lt;Grid.ColumnDefinitions>
+                    &lt;ColumnDefinition Width=".3*">&lt;/ColumnDefinition>
+                    &lt;ColumnDefinition Width=".7*">&lt;/ColumnDefinition>
+                &lt;/Grid.ColumnDefinitions>
+                &lt;Label x:Name="TitleLabel"
+                    Text="Edit Product"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    FontSize="Large">&lt;/Label>
+                &lt;Image x:Name="ProductImage"
+                    Source="{Binding ImageUrl, Mode=TwoWay}"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    Margin="10"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    VerticalOptions="Center">&lt;/Image>
+                &lt;Label Text="Product name"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    FontSize="Small"
+                    VerticalOptions="Center">&lt;/Label>
+                &lt;Entry x:Name="ProductName"
+                    Text="{Binding ProductName, Mode=TwoWay}"			   	   
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    VerticalOptions="Center">&lt;/Entry>
+                &lt;Label Text="Price"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    FontSize="Small"
+                    VerticalOptions="Center">&lt;/Label>
+    
+                &lt;StackLayout		   
+                    Grid.Row="3"
+                    Grid.Column="1">
+                    &lt;Label
+                        Margin="5,0,0,0"	 
+                        TextColor="Blue"
+                        Text="{Binding Price, Mode=OneWay}"
+                        FontSize="Small"
+                        VerticalOptions="Center">&lt;/Label>
+                    &lt;Entry x:Name="ProductPrice"
+                        Text="{Binding Price, Mode=TwoWay}"
+                        FontSize="Small"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center">&lt;/Entry>
+                &lt;/StackLayout>
+    
+                &lt;Label
+                    Text="Description"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    FontSize="Small">&lt;/Label>
+                &lt;Editor x:Name="ProductDescription"
+                    Text="{Binding Description, Mode=TwoWay}"			   	   
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    FontSize="Small"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center">&lt;/Editor>
+                &lt;Label Text="Offer End Date"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    FontSize="Small"
+                    VerticalOptions="Center">&lt;/Label>
+                &lt;DatePicker x:Name="ProductOfferEndDate" 
+                        Date="{Binding OfferEndDate, Mode=TwoWay}"			   	   
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    VerticalOptions="Center">&lt;/DatePicker>			
+                &lt;Button x:Name="SaveProductButton"
+                    Clicked="SaveProductButton_OnClicked"
+                    Text="Save Product"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2">&lt;/Button>
+            &lt;/Grid>
+        &lt;/ScrollView>
+    </code></pre></div>    
+    </p>
+    <p>
+        After defining how each control in the user interface is tied (data bind) to a property in our model, we need to provide a final hook for linking our model. We can do this with a BindingContext property.
+    </p>
+    <p>
+        <kbd>
+            this.BindingContext = MyProduct;
+        </kbd>
+    </p>
+    <p>
+        With Data Binding, we no longer require the code to load and save data which we commented out below:
+    </p>
+
+            <p>
+                <div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        public partial class MainPage : ContentPage
+        {
+            public Product MyProduct { get; set; }
+            public MainPage()
+            {
+                InitializeComponent();
+        
+                MyProduct = new Product
+                {
+                    Id = 1,
+                    Description = "Apple, Malus domestica, is one of the most widely cultivated tree fruits with a fleshy and edible surrounding tissue.",
+                    ImageUrl = "https://mauiman.dev/mauishopimages/red-apple-isolated.jpg",
+                    OfferEndDate = new DateTime(2025, 2, 10),
+                    ProductName = "Apple",
+                    Price = 2.80
+                };
+        
+                this.BindingContext = MyProduct;
+                /*
+                ProductImage.Source = MyProduct.ImageUrl;
+                ProductName.Text = MyProduct.ProductName;
+                ProductPrice.Text = MyProduct.Price.ToString();
+                ProductDescription.Text = MyProduct.Description;
+                ProductOfferEndDate.Date = MyProduct.OfferEndDate;
+                */
+            }
+        
+            private async void SaveProductButton_OnClicked(object sender, EventArgs e)
+            {
+                /*
+                MyProduct.ImageUrl = ProductImage.Source.ToString();		 
+                MyProduct.ProductName = ProductName.Text;
+                MyProduct.Price = double.Parse(ProductPrice.Text);
+                MyProduct.Description = ProductDescription.Text;
+                MyProduct.OfferEndDate = ProductOfferEndDate.Date;
+                */
+        
+                await DisplayAlert("Success", "Product saved", "Done");
+            }
+        }
+            </code></pre></div>    
+                </p>    
+                <p>
+                    The final step is to add some plumbing code in our Product model class to provide property-change notification so that Data Binding knows when to refresh the user interface.
+                    To do this, we implement the INotifyPropertyChanged interface in our Product class and raise a PropertyChanged event when a property such as the Description of our Product changes.
+                </p>
+                <p>
+                    <div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        public class Product : INotifyPropertyChanged
+        {
+            private int id;
+            private string productName;
+            private string description;
+            private double price;
+            private string imageUrl;
+            private DateTime offerEndDate;
+    
+            public int Id
+            {
+                get => id;
+                set
+                {
+                    id = value;
+                    RaisePropertyChanged(nameof(Id));
+    
+                }
+            }
+    
+            public string ProductName
+            {
+                get => productName;
+                set
+                {
+                    productName = value;
+                    RaisePropertyChanged(nameof(ProductName));
+                }
+            }
+    
+            public string Description
+            {
+                get => description;
+                set
+                {
+                    description = value;
+                    RaisePropertyChanged(nameof(Description));
+                }
+            }
+    
+            public double Price
+            {
+                get => price;
+                set
+                {
+                    price = value;
+                    RaisePropertyChanged(nameof(Price));
+                }
+            }
+    
+            public string ImageUrl
+            {
+                get => imageUrl;
+                set
+                {
+                    imageUrl = value;
+                    RaisePropertyChanged(nameof(ImageUrl));
+                }
+            }
+    
+            public DateTime OfferEndDate
+            {
+                get => offerEndDate;
+                set
+                {
+                    offerEndDate = value;
+                    RaisePropertyChanged(nameof(OfferEndDate));
+                }
+            }
+    
+            public event PropertyChangedEventHandler PropertyChanged;
+    
+            public void RaisePropertyChanged(string propertyName)
+            {
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }                    
+                    </code></pre></div>    
+                </p>    
+             
+                <h5>Download</h5>
+                <p>
+                    <ul class="list-marked">
+                        <li><a href="./download/MauiShop - Data Binding.zip">MauiShop - Data Binding.zip</a></li>
+                    </ul>
+                </p>
+
+                <p>
+                   This sample will be further evolved to one with a MVVM (Model View ViewModel) pattern.            
+                </p>
+                </p>
+
+        </div>
+
+    </article>
+</div>
+
+                    </div>
+
+                    <div class="col-lg-5 col-xl-4 section-divided__aside section-divided__aside-left group-post">
+
+  <!-- Categories-->
+  <div class="section-md">
+      <h5>.NET MAUI</h5>
+      <ul class="list-linked">
+          <li><a href="twitter.html">#100DAYSOFCODE</a></li>
+      </ul>
+
+  </div>
+
+</div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Page Footer-->
+        <footer>
+            <!--
+        <div class="pre-footer-corporate novi-bg novi-bg-img">
+          <div class="container">
+            <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+              <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
+
+              </div>
+              <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+
+              </div>
+              <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
+
+              </div>
+              <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          -->
+            <div class="footer-corporate novi-bg novi-bg-img">
+  <div class="container">
+      <div class="footer-corporate__inner">
+          <p class="rights">Copyright MAUIMAN.dev 2021-2023. All rights reserved. </p>
+      </div>
+  </div>
+</div>
+
+        </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

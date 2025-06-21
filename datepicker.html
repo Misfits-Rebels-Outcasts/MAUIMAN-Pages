@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8026277731801765"
+     crossorigin="anonymous"></script>
+
+    <!-- Site Title-->
+    <title>DatePicker</title>
+    <meta content="A DatePicker is a control that allows you to select a date."
+			name="description">
+    <meta content="DatePicker"
+			name="keywords">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,300;0,500;0,600;1,300&amp;display=swap">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="page-loader">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+    </div>
+    <!-- Page-->
+    <div class="page">
+                <!-- Page header-->
+        <header class="page-header">
+          <!-- RD Navbar-->
+          <div class="rd-navbar-wrap">
+              <nav class="rd-navbar novi-bg novi-bg-img" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-sm-device-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" data-lg-stick-up-offset="69px" data-xl-stick-up-offset="1px" data-xxl-stick-up-offset="1px">
+                  <div class="rd-navbar-inner">
+                      <!-- RD Navbar Panel-->
+                      <div class="rd-navbar-panel">
+                          <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                          <!-- RD Navbar Brand-->
+                          <div class="rd-navbar-brand">
+                              <!-- Brand-->
+                              <!--
+                          <a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-347x65.png" alt="" width="173" height="32" /><img class="brand-logo-light" src="images/logo-inverse-347x65.png" alt="" width="173" height="32" /></a>
+                          -->
+                              <div><a href="index.html" style="color:black;margin-top:2.5px;font-size:22px;">MAUIMAN.dev</a></div>
+
+                          </div>
+                      </div>
+
+                      <!-- RD Navbar Nav-->
+                      <div class="rd-navbar-nav-wrap">
+                          <ul class="rd-navbar-nav">
+                              <li><a href="index.html">Home</a></li>
+                              <!--
+                              <li class="active"><a href="index.html#articles">Articles</a></li>
+                              <li class="active"><a href="index.html#samples">Samples</a></li>
+                              -->
+                              <!--
+                              <li class="active"><a href="index.html#templates">Templates</a></li>
+                              <li class="active"><a href="index.html#components">Components</a></li>
+                              -->
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </header>
+
+
+        
+        <!-- Breadcrumbs-->
+        <section class="section novi-bg novi-bg-img breadcrumbs-custom">
+          <div class="container">
+              <div class="breadcrumbs-custom__inner">
+                  <p class="breadcrumbs-custom__title">MANual page for .NET MAUI DEVelopers</p>
+                  <ul class="breadcrumbs-custom__path">
+                      <li><a href="index.html">Home</a></li>
+                      <li class="active">MAUI</li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+
+        <section class="section novi-bg novi-bg-img bg-default section-lg">
+            <div class="container">
+                <div class="row row-fix row-70">
+                    <div class="col-lg-7 col-xl-8 section-divided__main group-post">
+                      <!-- Post standard-->
+<div class="section-md">
+    <article class="post-classic">
+        <div class="post-classic-title">
+            <h4>DatePicker</h4>
+        </div>
+        <div class="post-classic-body">
+            <p>
+                A DatePicker is a control that allows you to select a date. In the following, MinimumDate is the lowest selectable date for the DatePicker, which defaults to the first day of the year 1900.
+MaximumDate is the highest selectable date for the DatePicker, which defaults to the last day of the year 2100. Date is the selected date, which defaults to the value DateTime.Today. 
+DateSelected is the event to fire when a date is selected.
+            </p>
+            <p>
+                <div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        &lt;DatePicker MinimumDate="01/01/2020"
+            MaximumDate="12/31/2025"
+            Date="02/10/2022"
+            DateSelected="OnDateSelected" />
+                </code></pre></div>    
+            </p>    
+            <p>
+                When specifying a DateTime in XAML, a InvariantCulture:<kbd>Date="02/10/2022"</kbd> (two-digit months, two-digit days, and four-digit years) is assumed
+            </p>
+
+            <p>
+                <div>
+                    <img width="50%" height="50%" src=images/datepicker.png />
+                </div>
+            </p>
+            <p>
+                <div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        void OnDateSelected(object sender, DateChangedEventArgs args)
+        {
+            Console.WriteLine(((DatePicker)sender).Date);
+            Console.WriteLine(((DatePicker)sender).Date.ToString("d"));
+            Console.WriteLine(((DatePicker)sender).Date.ToString("D"));
+            Console.WriteLine(((DatePicker)sender).Date.ToString("f"));
+            Console.WriteLine(((DatePicker)sender).Date.ToString("F"));
+    
+            CultureInfo culture = new CultureInfo("en-SG");
+            Console.WriteLine(((DatePicker)sender).Date.ToString("d", culture));
+            culture = CultureInfo.InvariantCulture;
+            Console.WriteLine(((DatePicker)sender).Date.ToString("d", culture));
+        }                    
+                </code></pre></div>    
+            </p>             
+            <p>                
+                A standard date and time format string using a single character as the format specifier is used above to define the text representation of the date. The results are shown below:</p>
+            <p>
+                <div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+                    [DOTNET] 2/23/2022 12:00:00 AM
+                    [DOTNET] 2/23/2022
+                    [DOTNET] Wednesday, February 23, 2022
+                    [DOTNET] Wednesday, February 23, 2022 12:00 AM
+                    [DOTNET] Wednesday, February 23, 2022 12:00:00 AM
+                    [DOTNET] 23/2/2022
+                    [DOTNET] 02/23/2022
+                </code></pre></div>    
+            </p>             
+
+            <h5>Date Formatting</h5>
+
+            <ul class="list-marked">
+                <li>d - Short Date Pattern e.g. 2/23/2022</li>
+                <li>D - Long Date Pattern e.g. Wednesday, February 23, 2022</li>
+                <li>f - Full Date/Short Time Pattern e.g. Wednesday, February 23, 2022 12:00 AM</li>
+                <li>F - Full Date/Long Time Pattern e.g. Wednesday, February 23, 2022 12:00 AM</li>
+            </ul>
+            <p></p>
+            <h5>Date CultureInfo</h5>
+            <p>In the following, the Singapore CultureInfo and InvariantCulture is used for formatting the date.</p>
+            <p>
+                <div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        void OnDateSelected(object sender, DateChangedEventArgs args)
+        {
+            .
+            .
+            .
+            CultureInfo culture = new CultureInfo("en-SG");
+            Console.WriteLine(((DatePicker)sender).Date.ToString("d", culture));
+            culture = CultureInfo.InvariantCulture;
+            Console.WriteLine(((DatePicker)sender).Date.ToString("d", culture));
+        }                    
+                </code></pre></div>    
+            </p> 
+
+            <h5>Download</h5>
+            <p>
+                <ul class="list-marked">
+                    <li><a href="./download/datepicker.zip">datepicker.zip</a></li>
+                </ul>
+            </p>
+
+        </div>
+
+    </article>
+</div>
+
+                    </div>
+
+                    <div class="col-lg-5 col-xl-4 section-divided__aside section-divided__aside-left group-post">
+
+  <!-- Categories-->
+  <div class="section-md">
+      <h5>.NET MAUI</h5>
+      <ul class="list-linked">
+          <li><a href="twitter.html">#100DAYSOFCODE</a></li>
+      </ul>
+
+  </div>
+
+</div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Page Footer-->
+        <footer>
+            <!--
+        <div class="pre-footer-corporate novi-bg novi-bg-img">
+          <div class="container">
+            <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+              <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
+
+              </div>
+              <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+
+              </div>
+              <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
+
+              </div>
+              <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          -->
+            <div class="footer-corporate novi-bg novi-bg-img">
+  <div class="container">
+      <div class="footer-corporate__inner">
+          <p class="rights">Copyright MAUIMAN.dev 2021-2023. All rights reserved. </p>
+      </div>
+  </div>
+</div>
+
+        </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

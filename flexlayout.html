@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8026277731801765"
+     crossorigin="anonymous"></script>
+
+    <!-- Site Title-->
+    <title>FlexLayout</title>
+    <meta content="A FlexLayout is a control for stacking or wrapping a collection of child controls."
+			name="description">
+    <meta content="FlexLayout"
+			name="keywords">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,300;0,500;0,600;1,300&amp;display=swap">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="page-loader">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+    </div>
+    <!-- Page-->
+    <div class="page">
+                <!-- Page header-->
+        <header class="page-header">
+          <!-- RD Navbar-->
+          <div class="rd-navbar-wrap">
+              <nav class="rd-navbar novi-bg novi-bg-img" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-sm-device-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" data-lg-stick-up-offset="69px" data-xl-stick-up-offset="1px" data-xxl-stick-up-offset="1px">
+                  <div class="rd-navbar-inner">
+                      <!-- RD Navbar Panel-->
+                      <div class="rd-navbar-panel">
+                          <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                          <!-- RD Navbar Brand-->
+                          <div class="rd-navbar-brand">
+                              <!-- Brand-->
+                              <!--
+                          <a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-347x65.png" alt="" width="173" height="32" /><img class="brand-logo-light" src="images/logo-inverse-347x65.png" alt="" width="173" height="32" /></a>
+                          -->
+                              <div><a href="index.html" style="color:black;margin-top:2.5px;font-size:22px;">MAUIMAN.dev</a></div>
+
+                          </div>
+                      </div>
+
+                      <!-- RD Navbar Nav-->
+                      <div class="rd-navbar-nav-wrap">
+                          <ul class="rd-navbar-nav">
+                              <li><a href="index.html">Home</a></li>
+                              <!--
+                              <li class="active"><a href="index.html#articles">Articles</a></li>
+                              <li class="active"><a href="index.html#samples">Samples</a></li>
+                              -->
+                              <!--
+                              <li class="active"><a href="index.html#templates">Templates</a></li>
+                              <li class="active"><a href="index.html#components">Components</a></li>
+                              -->
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </header>
+
+
+        
+        <!-- Breadcrumbs-->
+        <section class="section novi-bg novi-bg-img breadcrumbs-custom">
+          <div class="container">
+              <div class="breadcrumbs-custom__inner">
+                  <p class="breadcrumbs-custom__title">MANual page for .NET MAUI DEVelopers</p>
+                  <ul class="breadcrumbs-custom__path">
+                      <li><a href="index.html">Home</a></li>
+                      <li class="active">MAUI</li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+
+        <section class="section novi-bg novi-bg-img bg-default section-lg">
+            <div class="container">
+                <div class="row row-fix row-70">
+                    <div class="col-lg-7 col-xl-8 section-divided__main group-post">
+                      <!-- Post standard-->
+<div class="section-md">
+    <article class="post-classic">
+        <div class="post-classic-title">
+            <h4>FlexLayout</h4>
+        </div>
+        <div class="post-classic-body">
+            <p>
+                A FlexLayout is a control for stacking or wrapping a collection of child controls.
+                When stacking the items, you can specify Direction, JustifyContent, AlignItems, and Wrap. The easiest way to understand FlexLayout is through samples shown below.
+            </p>
+
+            <h5>JustifyContent</h5>
+            <p>
+                JustifyContent describes how child elements are justified when there is extra space around them.
+            </p>
+            <p>
+                <div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        &lt;FlexLayout JustifyContent="Start">
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+        &lt;/FlexLayout>
+                </code></pre></div>    
+            </p>
+
+            <p>
+                <ul class="list-marked">
+                    <li>Start (Default) - At the beginning of the parent container.
+                        <p>
+                            <div>
+                                <img width="20%" height="20%" src=images/flexlayout_justifycontent_start.png />
+                            </div>
+                        </p>            
+                    </li> 
+                    <li>Center - Center of the parent container.
+                        <p>
+                            <div>
+                                <img width="20%" height="20%" src=images/flexlayout_justifycontent_center.png />
+                            </div>
+                        </p>            
+                    </li>
+                    <li>End - End of the parent container.
+                        <p>
+                            <div>
+                                <img width="20%" height="20%" src=images/flexlayout_justifycontent_end.png />
+                            </div>
+                        </p>            
+                    </li>
+                    <li>SpaceAround - Begins with one unit of space for the borders and two units respective to others elements in the container.
+                        <p>
+                            <div>
+                                <img width="20%" height="20%" src=images/flexlayout_justifycontent_spacearound.png />
+                            </div>
+                        </p>            
+                    </li>
+                    <li>SpaceBetween - Space between elements but no space at the beginning and end.
+                        <p>
+                            <div>
+                                <img width="20%" height="20%" src=images/flexlayout_justifycontent_spacebetween.png />
+                            </div>
+                        </p>            
+                    </li>
+                    <li>SpaceEvenly - Space evenly between elements and at the beginning and end.
+                        <p>
+                            <div>
+                                <img width="20%" height="20%" src=images/flexlayout_justifycontent_spaceevenly.png />
+                            </div>
+                        </p>            
+                    </li>
+                </ul>
+            </p>
+            <h5>AlignItems</h5>
+            <p>
+                AlignItems describes the elements alignment in the parent container. Note that JustifyContent described the elements along the main axis while AlignItems described the elements perpendicular to the main axis.
+            </p>
+          
+            <p>
+                <div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        &lt;FlexLayout AlignItems="Stretch">
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+        &lt;/FlexLayout>
+                </code></pre></div>    
+            </p>
+
+            <p>
+                <ul class="list-marked">
+                    <li>Stretch (Default) - Stretched to the height of the parent container.
+                        <p>
+                            <div>
+                                <img width="20%" height="20%" src=images/flexlayout_alignitems_stretch.png />
+                            </div>
+                        </p>            
+                    </li> 
+                    <li>Start - At the beginning of the parent container.
+                        <p>
+                            <div>
+                                <img width="20%" height="20%" src=images/flexlayout_alignitems_start.png />
+                            </div>
+                        </p>            
+                    </li>
+                    <li>End - At the end of the parent container.
+                        <p>
+                            <div>
+                                <img width="20%" height="20%" src=images/flexlayout_alignitems_end.png />
+                            </div>
+                        </p>            
+                    </li>
+                    <li>Center - At the center of the parent container.
+                        <p>
+                            <div>
+                                <img width="20%" height="20%" src=images/flexlayout_alignitems_center.png />
+                            </div>
+                        </p>            
+                    </li>
+                </ul>
+
+                <h5>Direction</h5>
+                <p>
+                    Direction indicates the direction of the elements with respect to the screen.
+                </p>
+              
+                <p>
+                    <div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        &lt;FlexLayout Direction="Row">
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+        &lt;/FlexLayout>
+        </code></pre></div>    
+                </p>
+    
+                <p>
+                    <ul class="list-marked">
+                        <li>Row (Default) - Left to Right.
+                            <p>
+                                <div>
+                                    <img width="20%" height="20%" src=images/flexlayout_direction_row.png />
+                                </div>
+                            </p>            
+                        </li> 
+                        <li>RowReverse - Right to Left.
+                            <p>
+                                <div>
+                                    <img width="20%" height="20%" src=images/flexlayout_direction_rowreverse.png />
+                                </div>
+                            </p>            
+                        </li> 
+                        <li>Column - Top to Bottom.
+                            <p>
+                                <div>
+                                    <img width="20%" height="20%" src=images/flexlayout_direction_column.png />
+                                </div>
+                            </p>            
+                        </li> 
+                        <li>ColumnReverse - Bottom to Top.
+                            <p>
+                                <div>
+                                    <img width="20%" height="20%" src=images/flexlayout_direction_columnreverse.png />
+                                </div>
+                            </p>            
+                        </li> 
+                    </ul>
+                </p>        
+                
+                <h5>Wrap</h5>
+                <p>
+                    By default, FlexLayout layout the items in one single line without wrapping. In some layout, such as a layout for a photo album, it is useful to be able to wrap the items to the next line.
+                </p>
+              
+                <p>
+                    <div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        &lt;FlexLayout Wrap="NoWrap">
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+            &lt;Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+        &lt;/FlexLayout>            
+                    </code></pre></div>    
+                </p>
+    
+                <p>
+                    <ul class="list-marked">
+                        <li>NoWrap (Default) - All elements in one line.
+                            <p>
+                                <div>
+                                    <img width="20%" height="20%" src=images/flexlayout_wrap_nowrap.png />
+                                </div>
+                            </p>            
+                        </li> 
+                        <li>Wrap: All elements in multiple lines from Top to Bottom.
+                            <p>
+                                <div>
+                                    <img width="20%" height="20%" src=images/flexlayout_wrap_wrap.png />
+                                </div>
+                            </p>            
+                        </li> 
+                        <li>Reverse - All elements in multiple lines from Bottom to Top.
+                            <p>
+                                <div>
+                                    <img width="20%" height="20%" src=images/flexlayout_wrap_reverse.png />
+                                </div>
+                            </p>            
+                        </li> 
+
+                    </ul>
+                </p>                
+                <p>Download</p>
+                <p>
+                    <ul class="list-marked">
+                        <li><a href=download/flexlayout.zip>flexlayout.zip</a></li>
+                    </ul>
+                </p>
+                                 
+        </div>
+
+    </article>
+</div>
+
+                    </div>
+
+                    <div class="col-lg-5 col-xl-4 section-divided__aside section-divided__aside-left group-post">
+
+  <!-- Categories-->
+  <div class="section-md">
+      <h5>.NET MAUI</h5>
+      <ul class="list-linked">
+          <li><a href="twitter.html">#100DAYSOFCODE</a></li>
+      </ul>
+
+  </div>
+
+</div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Page Footer-->
+        <footer>
+            <!--
+        <div class="pre-footer-corporate novi-bg novi-bg-img">
+          <div class="container">
+            <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+              <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
+
+              </div>
+              <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+
+              </div>
+              <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
+
+              </div>
+              <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          -->
+            <div class="footer-corporate novi-bg novi-bg-img">
+  <div class="container">
+      <div class="footer-corporate__inner">
+          <p class="rights">Copyright MAUIMAN.dev 2021-2023. All rights reserved. </p>
+      </div>
+  </div>
+</div>
+
+        </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

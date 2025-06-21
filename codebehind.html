@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8026277731801765"
+     crossorigin="anonymous"></script>
+
+    <!-- Site Title-->
+    <title>Code-Behind</title>
+    <meta content="Product Detail Form sample with XAML and Code-Behind."
+			name="description">
+    <meta content="MAUI Code-Behind"
+			name="keywords">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,300;0,500;0,600;1,300&amp;display=swap">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="page-loader">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+    </div>
+    <!-- Page-->
+    <div class="page">
+                <!-- Page header-->
+        <header class="page-header">
+          <!-- RD Navbar-->
+          <div class="rd-navbar-wrap">
+              <nav class="rd-navbar novi-bg novi-bg-img" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-sm-device-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" data-lg-stick-up-offset="69px" data-xl-stick-up-offset="1px" data-xxl-stick-up-offset="1px">
+                  <div class="rd-navbar-inner">
+                      <!-- RD Navbar Panel-->
+                      <div class="rd-navbar-panel">
+                          <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                          <!-- RD Navbar Brand-->
+                          <div class="rd-navbar-brand">
+                              <!-- Brand-->
+                              <!--
+                          <a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-347x65.png" alt="" width="173" height="32" /><img class="brand-logo-light" src="images/logo-inverse-347x65.png" alt="" width="173" height="32" /></a>
+                          -->
+                              <div><a href="index.html" style="color:black;margin-top:2.5px;font-size:22px;">MAUIMAN.dev</a></div>
+
+                          </div>
+                      </div>
+
+                      <!-- RD Navbar Nav-->
+                      <div class="rd-navbar-nav-wrap">
+                          <ul class="rd-navbar-nav">
+                              <li><a href="index.html">Home</a></li>
+                              <!--
+                              <li class="active"><a href="index.html#articles">Articles</a></li>
+                              <li class="active"><a href="index.html#samples">Samples</a></li>
+                              -->
+                              <!--
+                              <li class="active"><a href="index.html#templates">Templates</a></li>
+                              <li class="active"><a href="index.html#components">Components</a></li>
+                              -->
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </header>
+
+
+        
+        <!-- Breadcrumbs-->
+        <section class="section novi-bg novi-bg-img breadcrumbs-custom">
+          <div class="container">
+              <div class="breadcrumbs-custom__inner">
+                  <p class="breadcrumbs-custom__title">MANual page for .NET MAUI DEVelopers</p>
+                  <ul class="breadcrumbs-custom__path">
+                      <li><a href="index.html">Home</a></li>
+                      <li class="active">MAUI</li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+
+        <section class="section novi-bg novi-bg-img bg-default section-lg">
+            <div class="container">
+                <div class="row row-fix row-70">
+                    <div class="col-lg-7 col-xl-8 section-divided__main group-post">
+                      <!-- Post standard-->
+<div class="section-md">
+    <article class="post-classic">
+        <div class="post-classic-title">
+            <h4>Code-Behind</h4>
+        </div>
+        <div class="post-classic-body">
+            <p>
+                In a .NET MAUI application, XAML (Extensible Application Markup Language) is commonly used to define the visual components of a page and works together with a C# class code-behind file. The code-behind class provides code support for events and can access elements define in the XAML markup. This sample illustrates a simple Product Detail Form using just XAML and a C# Code-Behind class.
+                This sample loads data from our model and uses it to initialize our user interface. It allows you to enter data and click on the Save button to save the data back to the model.
+            </p>
+            <p>
+                </p><div>
+                    <img width="50%" height="50%" src="mauishopimages/codebehind.png">
+                </div>
+            <p></p>
+
+            <h5>Example</h5>
+            <p><strong>XAML Code-Behind from History</strong></p>
+            <p>
+                I think this sample is best understood from a history point of view. Well, .NET 1.0 was introduced in 2002 and during that time, WinForms (Windows Forms) was introduced together as the desktop UI technology together. To develop an application with graphical user interfaces, WinForms is all that you need to care about. Life was much simpler then. Many line of business applications using Windows Forms still exist today.
+            </p>
+            <p>
+                In 2006, WPF (Windows Presentation Foundation) was released as an alternative to WinForms. WPF uses XAML (Extensible MArkup Language), which is a language based on XML, to declare the user interface elements. In a WPF application, we use a .xaml file to declare the user interface and a code-behind file to describe the logic. This innovation improves on the separation of user interface and business logic issue prevalent in the development industry.
+            </p>                
+            <p>
+                XAML was later adopted by Universal Windows Platform (UWP), which is what you need to develop an app for Windows Store (or Microsoft Store today). As of today, UWP further evolved to Windows App SDK and Xamarin (now .NET MAUI) also adopted XAML.                 
+            </p>
+            <p>In the XAML code below, a Grid element is used to declare rows of fields consisting of a Title, Product Image, Product Name, Product Price, Product Description, and others.</p>
+            <p>
+            </p><div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        &lt;ScrollView&gt;
+            &lt;Grid Margin="25"&gt;
+                &lt;Grid.RowDefinitions&gt;
+                    &lt;RowDefinition Height="50"&gt;&lt;/RowDefinition&gt;
+                    &lt;RowDefinition Height="200"&gt;&lt;/RowDefinition&gt;
+                    &lt;RowDefinition Height="50"&gt;&lt;/RowDefinition&gt;
+                    &lt;RowDefinition Height="50"&gt;&lt;/RowDefinition&gt;
+                    &lt;RowDefinition Height="100"&gt;&lt;/RowDefinition&gt;
+                    &lt;RowDefinition Height="50"&gt;&lt;/RowDefinition&gt;
+                    &lt;RowDefinition Height="50"&gt;&lt;/RowDefinition&gt;
+                    &lt;RowDefinition Height="*"&gt;&lt;/RowDefinition&gt;
+                &lt;/Grid.RowDefinitions&gt;
+                &lt;Grid.ColumnDefinitions&gt;
+                    &lt;ColumnDefinition Width=".3*"&gt;&lt;/ColumnDefinition&gt;
+                    &lt;ColumnDefinition Width=".7*"&gt;&lt;/ColumnDefinition&gt;
+                &lt;/Grid.ColumnDefinitions&gt;
+                &lt;Label x:Name="TitleLabel"
+                    Text="Edit Product"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    FontSize="Large"&gt;&lt;/Label&gt;
+                &lt;Image x:Name="ProductImage"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    Margin="10"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    VerticalOptions="Center"&gt;&lt;/Image&gt;
+                &lt;Label Text="Product name"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    FontSize="Small"
+                    VerticalOptions="Center"&gt;&lt;/Label&gt;
+                &lt;Entry x:Name="ProductName"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    VerticalOptions="Center"&gt;&lt;/Entry&gt;
+                &lt;Label Text="Price"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    FontSize="Small"
+                    VerticalOptions="Center"&gt;&lt;/Label&gt;
+                &lt;Entry x:Name="ProductPrice" 
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    FontSize="Small"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center"&gt;&lt;/Entry&gt;
+                &lt;Label
+                    Text="Description"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    FontSize="Small"&gt;&lt;/Label&gt;
+                &lt;Editor x:Name="ProductDescription"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    FontSize="Small"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center"&gt;&lt;/Editor&gt;
+                &lt;Label Text="Offer End Date"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    FontSize="Small"
+                    VerticalOptions="Center"&gt;&lt;/Label&gt;
+                &lt;DatePicker x:Name="ProductOfferEndDate" 
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    VerticalOptions="Center"&gt;&lt;/DatePicker&gt;			
+                &lt;Button x:Name="SaveProductButton"
+                    Clicked="SaveProductButton_OnClicked"
+                    Text="Save Product"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"&gt;&lt;/Button&gt;
+            &lt;/Grid&gt;
+        &lt;/ScrollView&gt;
+            </code></pre></div>    
+            <p></p>
+            <p>
+            Besides declaring how our user interface looks like in XAML. 
+            We need to load data from the model, enables changes to the data through the user interface, and validate the data when the Save button is clicked.     
+            Using Code Behind, there is a natural tendency to structure our code as below.    
+            </p>
+            <p>
+            The constructor provides the code to initialize the user interface elements defined in XAML with the Product model attributes.
+            </p>
+            <p>
+            The SaveProductButton_OnClicked method performs the saving of the properties in the XAML markup elements back to the model.
+            </p>
+            <p>.NET MAUI provides <a href="databinding.html">Data Binding</a> to ease the above process. You basically just need to bind the user interface elements with your model and data binding will automatically make sure the data in the user interface and your model is in sync.</p>
+            <p>
+                </p><div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        public partial class MainPage : ContentPage
+        {
+            public Product MyProduct { get; set; }
+            public MainPage()
+            {
+                InitializeComponent();
+        
+                MyProduct = new Product
+                {
+                    Id = 1,
+                    Description = "Apple, Malus domestica, is one of the most widely cultivated tree fruits with a fleshy and edible surrounding tissue.",
+                    ImageUrl = "https://mauiman.dev/mauishopimages/red-apple-isolated.jpg",
+                    OfferEndDate = new DateTime(2025, 2, 10),
+                    ProductName = "Apple",
+                    Price = 2.80
+                };
+        
+                ProductImage.Source = MyProduct.ImageUrl;
+                ProductName.Text = MyProduct.ProductName;
+                ProductPrice.Text = MyProduct.Price.ToString();
+                ProductDescription.Text = MyProduct.Description;
+                ProductOfferEndDate.Date = MyProduct.OfferEndDate;
+        
+            }
+        
+            private async void SaveProductButton_OnClicked(object sender, EventArgs e)
+            {
+        
+                MyProduct.ImageUrl = ProductImage.Source.ToString();		 
+                MyProduct.ProductName = ProductName.Text;
+                MyProduct.Price = double.Parse(ProductPrice.Text);
+                MyProduct.Description = ProductDescription.Text;
+                MyProduct.OfferEndDate = ProductOfferEndDate.Date;
+        
+                await DisplayAlert("Success", "Product saved", "Done");
+            }
+        }                                    
+                </code></pre></div>    
+                <p></p>    
+        <p> 
+        </p>The model class is shown below.
+        <p>
+        </p><div class="" style="border: 1px solid #969696;text-align:left;background:whitesmoke"><pre><code style="color:rgb(87, 87, 87);background:whitesmoke">
+        public class Product 
+        {
+            private int id;
+            private string productName;
+            private string description;
+            private double price;
+            private string imageUrl;
+            private DateTime offerEndDate;
+    
+            public int Id
+            {
+                get =&gt; id;
+                set
+                {
+                    id = value; 
+                }
+            }
+    
+            public string ProductName
+            {
+                get =&gt; productName;
+                set
+                {
+                    productName = value;
+                }
+            }
+    
+            public string Description
+            {
+                get =&gt; description;
+                set
+                {
+                    description = value;
+                }
+            }
+    
+            public double Price
+            {
+                get =&gt; price;
+                set
+                {
+                    price = value;
+                }
+            }
+    
+            public string ImageUrl
+            {
+                get =&gt; imageUrl;
+                set
+                {
+                    imageUrl = value; 
+                }
+            }
+    
+            public DateTime OfferEndDate
+            {
+                get =&gt; offerEndDate;
+                set
+                {
+                    offerEndDate = value; 
+                }
+            }
+    
+        }
+        </code></pre></div>    
+        <p></p>      
+
+        <h5>Download</h5>
+        <p>
+            </p><ul class="list-marked">
+                <li><a href="./download/MauiShop - Code Behind.zip">MauiShop - Code Behind.zip</a></li>
+            </ul>
+        <p></p>
+                
+                
+        </div>
+
+    </article>
+</div>
+                    </div>
+
+                    <div class="col-lg-5 col-xl-4 section-divided__aside section-divided__aside-left group-post">
+
+  <!-- Categories-->
+  <div class="section-md">
+      <h5>.NET MAUI</h5>
+      <ul class="list-linked">
+          <li><a href="twitter.html">#100DAYSOFCODE</a></li>
+      </ul>
+
+  </div>
+
+</div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Page Footer-->
+        <footer>
+            <!--
+        <div class="pre-footer-corporate novi-bg novi-bg-img">
+          <div class="container">
+            <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+              <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
+
+              </div>
+              <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+
+              </div>
+              <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
+
+              </div>
+              <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          -->
+            <div class="footer-corporate novi-bg novi-bg-img">
+  <div class="container">
+      <div class="footer-corporate__inner">
+          <p class="rights">Copyright MAUIMAN.dev 2021-2023. All rights reserved. </p>
+      </div>
+  </div>
+</div>
+
+        </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
